@@ -12,19 +12,23 @@ def shakil_the_dog
   puts "talk to the dog"
   puts "program will end if you tell the dog to go away."
 
-  speech = gets.chomp
+  while true do
 
-  case speech
-  when /bark/
-    puts 'woof ' * 3
-  when /stop/
-    puts 'Enjoy your piece'
-  when /meow/
-    puts 'woof ' * 5
-  when /treat/
-    puts 'dog is going nuts'
-  when /go/
-    puts 'dog leaves'
+    speech = gets.chomp
+
+    case speech
+    when /bark/
+      puts 'woof ' * 3
+    when /stop/
+      puts 'Enjoy your piece'
+    when /meow/
+      puts 'woof ' * 5
+    when /treat/
+      puts 'dog is going nuts'
+    when /go/
+      puts 'dog leaves'
+      break
+    end
   end
 end
 
